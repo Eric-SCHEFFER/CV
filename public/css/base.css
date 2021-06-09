@@ -1,0 +1,19 @@
+/* Colors variables */
+:root {
+   --entete-footer-bg: #26466A;
+
+}
+
+
+html {
+   height: 100%;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+}
+
+html,
+body,
+p {
+   padding: 0;
+   margin: 0;
+}

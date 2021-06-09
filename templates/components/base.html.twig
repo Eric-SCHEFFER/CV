@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        
-        {% block stylesheets %}{% endblock %}
-    </head>
 
-    
-        <header>
-            {% include 'components/enteteEtNavbar.html.twig' %}
-        </header>
-        <main>
-            {% for message in app.flashes('succes') %}
-                <div class="conteneurMessageFlash">
-                    <div class="messageFlash">
-                        {{ message }}
-                    </div>
-                </div>
-            {% endfor %}
-            {% for message in app.flashes('error') %}
-		        <div class="conteneurMessageFlash">
-			        <div class="messageFlash messageFlash-alert">
-				        {{ message }}
-			        </div>
-		        </div>
-	        {% endfor %}
-            {% block body %}{% endblock %}
-        </main>
-        <footer>
-            {% include 'components/footer.html.twig' %}
-        </footer>
-        {% block javascripts %}{% endblock %}
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/enteteEtNavbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+
+    {% block stylesheets %}
+    {% endblock %}
+</head>
+
+
+<header>
+    {% include 'components/enteteEtNavbar.html.twig' %}
+</header>
+<main>
+    {% for message in app.flashes('succes') %}
+    <div class="conteneurMessageFlash">
+        <div class="messageFlash">
+            {{ message }}
+        </div>
+    </div>
+    {% endfor %}
+    {% for message in app.flashes('error') %}
+    <div class="conteneurMessageFlash">
+        <div class="messageFlash messageFlash-alert">
+            {{ message }}
+        </div>
+    </div>
+    {% endfor %}
+    {% block body %}{% endblock %}
+</main>
+<footer>
+    {% include 'components/footer.html.twig' %}
+</footer>
+{% block javascripts %}{% endblock %}
+
 </html>

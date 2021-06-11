@@ -1,19 +1,49 @@
-/* Colors variables */
+/* Variables */
 :root {
-   --entete-footer-bg: #26466A;
+   /* Colors */
+   --header-footer-bg: #26466A;
+   /* Heights */
+   --header-height: 100px;
+   --footer-height: 100px;
 
+   /* Paddings */
+   --header-padding: 30px;
+   --page-wrapper-padding: 30px;
+   --footer-padding: 30px;
 }
 
-
 html {
-   height: 100%;
    box-sizing: border-box;
    scroll-behavior: smooth;
 }
 
 html,
+body {
+   height: 100%;
+}
+
+html,
 body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
    padding: 0;
    margin: 0;
 }
+
+.header-main-container {
+   margin-bottom: calc((var(--footer-height) + var(--footer-padding) * 2) * (-1));
+   min-height: 100%;
+   width: 100%;
+}
+
+.header-main-container:after {
+   content: "";
+   display: block;
+   height: calc(var(--footer-height) + var(--footer-padding) * 2);
+}
+

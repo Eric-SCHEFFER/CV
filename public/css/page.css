@@ -1,4 +1,5 @@
-.home-wrapper {
-   min-height: 80vh;
-   border: solid yellow 1px;
+.page-wrapper {
+   /* border: solid red 1px; */
+   padding: var(--page-wrapper-padding);
+
 }

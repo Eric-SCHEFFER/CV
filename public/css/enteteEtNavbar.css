@@ -2,4 +2,62 @@
    height: var(--header-height);
    background-color: var(--header-footer-bg);
    padding: var(--header-padding);
+   width: 100%;
+   position: relative;
+}
+
+.bloc-header-haut {
+   display: flex;
+   justify-content: space-between;
+   border: solid violet 1px;
+   position: relative;
+   max-width: 100%;
+}
+
+.photosEtNoms {
+   display: flex;
+   border: white 1px solid;
+}
+
+.photo {
+   width: 50px;
+   height: 50px;
+   border: solid 4px white;
+   border-radius: 50%;
+}
+
+.photo img {
+   width: 100%;
+   height: 100%;
+}
+
+.nomEtPrenom {
+
+}
+
+.prenom {
+
+}
+
+.titres {
+   background-color: rgba(128, 128, 128, 0.459);
+   margin: 0 50% 0 50%;
+}
+
+.titre {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   border: solid green 1px;
+}
+
+.sous-titre {
+   position: absolute;
+   color: orangered;
+   right: 0;
+   bottom: -20px;
+}
+
+.navbar {
+   background-color: rgba(172, 255, 47, 0.426);
 }

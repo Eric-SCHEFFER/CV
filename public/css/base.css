@@ -4,7 +4,7 @@
    --header-footer-bg: #26466A;
 
    /* Heights */
-   --header-height: 70px;
+   --header-min-height: 70px;
    --footer-height: 100px;
 
    /* Paddings */

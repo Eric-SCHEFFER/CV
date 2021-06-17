@@ -18,10 +18,16 @@ html {
    scroll-behavior: smooth;
 }
 
+
 html,
 body {
    height: 100%;
+   overflow-x: hidden;
 }
+
+body {
+}
+
 
 html,
 body,
@@ -36,6 +42,10 @@ p {
    margin: 0;
 }
 
+h1 {
+   text-transform: uppercase;
+}
+
 .header-main-container {
    margin-bottom: calc((var(--footer-height) + var(--footer-padding) * 2) * (-1));
    min-height: 100%;
@@ -47,4 +57,3 @@ p {
    display: block;
    height: calc(var(--footer-height) + var(--footer-padding) * 2);
 }
-

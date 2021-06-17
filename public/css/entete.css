@@ -16,7 +16,6 @@
    display: flex;
    border: white 1px solid;
    position: relative;
-
 }
 
 .photo {
@@ -40,12 +39,12 @@
 .titres {
    border: solid green 1px;
    margin: auto;
+   position: relative;
 }
 
 .titre {
    position: relative;
    border: solid rgb(128, 0, 0) 1px;
-   position: relative;
 }
 
 .sous-titre {
@@ -55,6 +54,12 @@
    bottom: 20px;
 }
 
+nav {
+   position: sticky;
+   top: 0;
+}
+
 .navbar {
    background-color: rgba(172, 255, 47, 0.426);
+
 }

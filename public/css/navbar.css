@@ -1,0 +1,10 @@
+nav {
+   position: sticky;
+   top: 0;
+}
+
+.navbar {
+   background-color: rgba(172, 255, 47, 0.426);
+   padding: 15px 30px;
+
+}

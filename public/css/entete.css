@@ -3,6 +3,7 @@
    background-color: var(--header-footer-bg);
    padding: var(--header-padding);
    position: relative;
+   color: white;
 }
 
 .bloc-header-haut {
@@ -40,17 +41,25 @@
    border: solid green 1px;
    margin: auto;
    position: relative;
+   font-size: 1rem;
 }
 
 .titre {
    position: relative;
+   font-size: 3em;
    border: solid rgb(128, 0, 0) 1px;
 }
 
+
 .sous-titre {
+   font-size: 1.5em;
    position: relative;
-   color: orangered;
-   right: -157px;
-   bottom: 20px;
+   color: var(--header-sous-titre);
+   float: right;
+   left: 0em;
+   top: -1.5em;
 }
 
+.sous-titre h1 {
+   font-weight: 400;
+}

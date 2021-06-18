@@ -2,6 +2,7 @@
 :root {
    /* Colors */
    --header-footer-bg: #26466A;
+   --header-sous-titre: rgb(255, 102, 0);
 
    /* Heights */
    --header-min-height: 70px;
@@ -16,6 +17,7 @@
 html {
    box-sizing: border-box;
    scroll-behavior: smooth;
+   font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -25,8 +27,7 @@ body {
    overflow-x: hidden;
 }
 
-body {
-}
+body {}
 
 
 html,
@@ -42,8 +43,14 @@ p {
    margin: 0;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
    text-transform: uppercase;
+   font-weight: 300;
 }
 
 .header-main-container {

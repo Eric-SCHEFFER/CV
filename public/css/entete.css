@@ -20,15 +20,14 @@
 }
 
 .photo {
-   width: 50px;
-   height: 50px;
+   width: 110px;
+   height: 110px;
    border: solid 4px white;
    border-radius: 50%;
 }
 
 .photo img {
-   width: 100%;
-   height: 100%;
+  
 }
 
 .nom-et-prenom {}
@@ -41,7 +40,7 @@
    border: solid green 1px;
    margin: auto;
    position: relative;
-   font-size: 1rem;
+   font-size: 1vw;
 }
 
 .titre {

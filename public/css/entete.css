@@ -15,22 +15,28 @@
 
 .photo-et-noms {
    display: flex;
+   align-items: center;
    border: white 1px solid;
    position: relative;
 }
 
 .photo {
-   width: 110px;
-   height: 110px;
-   border: solid 4px white;
-   border-radius: 50%;
+   width: 10.5vw;
+   height: 10.5vw;
+   max-width: 190px;
+   max-height: 190px;
 }
 
 .photo img {
-  
+   width: 100%;
+   height: 100%;
+   border: solid 5px white;
+   border-radius: 50%;
 }
 
-.nom-et-prenom {}
+.nom-et-prenom {
+   padding: 0 40px;
+}
 
 .nom {}
 
@@ -49,16 +55,41 @@
    border: solid rgb(128, 0, 0) 1px;
 }
 
+.titre h1 {
+   font-weight: 200;
+}
+
 
 .sous-titre {
-   font-size: 1.5em;
+   font-size: 1.9em;
    position: relative;
    color: var(--header-sous-titre);
    float: right;
    left: 0em;
-   top: -1.5em;
+   top: -1.3em;
 }
 
 .sous-titre h1 {
    font-weight: 400;
+}
+
+
+/* Grand écrans */
+@media screen and (min-width: 2000px) {
+   .titres {
+      font-size: 1.3rem;
+   }
+}
+
+/* Écrans moyens */
+@media screen and (max-width: 1300px) {
+   .photo {
+      width: 138px;
+      height: 138px;
+   }
+}
+
+/* Petits écrans */
+@media screen and (max-width: 800px) {
+   
 }

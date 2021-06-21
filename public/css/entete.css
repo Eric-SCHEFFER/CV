@@ -104,3 +104,8 @@
       font-size: .43em;
    }
 }
+
+/* Tous petits écrans */
+@media screen and (max-width: 380px) {
+   
+}

@@ -6,6 +6,6 @@ nav {
 
 .navbar {
    background-color: var(--header-footer-bg);
-   padding: 15px 30px;
-
+   padding: 15px 40px;
+   text-transform: uppercase;
 }

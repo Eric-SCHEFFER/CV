@@ -11,9 +11,8 @@
    --footer-height: 100px;
 
    /* Paddings */
-   --header-padding: 30px;
-   --page-wrapper-padding: 30px;
-   --footer-padding: 30px;
+   --page-wrapper-padding: 40px;
+   --footer-padding: 40px;
 }
 
 html {

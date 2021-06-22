@@ -1,10 +1,11 @@
 nav {
    position: sticky;
    top: 0;
+   color: var(--blanc);
 }
 
 .navbar {
-   background-color: rgba(172, 255, 47, 0.426);
+   background-color: var(--header-footer-bg);
    padding: 15px 30px;
 
 }

@@ -3,6 +3,8 @@
    /* Colors */
    --header-footer-bg: #26466A;
    --header-sous-titre: rgb(255, 102, 0);
+   --blanc: white;
+   --gris1: rgb(230, 230, 230);
 
    /* Heights */
    --header-min-height: 70px;

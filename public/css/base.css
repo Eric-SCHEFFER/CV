@@ -24,6 +24,9 @@ html {
 
 html,
 body {
+   /* TODO: j'ai remplacé height 100% par 100vh.
+   Tester si bug barre noire sur Samsung S7 revient */
+   height: 100vh;
    overflow-x: hidden;
 }
 
@@ -53,23 +56,21 @@ h6 {
    font-weight: 300;
 }
 
-
-/* Méthode ci-dessous pour avoir un footer qui suit la taille de la page, tout en restant en bas.
-Mais, suite à un bug d'affichage d'une barre noire en bas de l'écran, uniquement sur Samsung Galaxy S7, je ne l'utilise plus.
-Je mets simplement une hauteur mini de 50vh sur mon wrapper de page.
-
 /*
+Méthode ci-dessous pour avoir un footer qui suit la taille de la page, tout en restant en bas.
+
+*/
+
 .header-main-container {
    margin-bottom: calc((var(--footer-height) + var(--footer-padding) * 2) * (-1));
    min-height: 100%;
    width: 100%;
 }
-*/
 
-/*
+
+
 .header-main-container:after {
    content: "";
    display: block;
    height: calc(var(--footer-height) + var(--footer-padding) * 2);
 }
-*/

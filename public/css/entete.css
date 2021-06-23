@@ -16,7 +16,7 @@
 .photo-et-noms {
    display: flex;
    align-items: center;
-   /* border: rgb(0, 195, 255) 1px solid; */
+   /*border: rgb(0, 195, 255) 1px solid; */
    position: relative;
 }
 
@@ -39,6 +39,7 @@
    padding: 0 40px;
    font-size: 1.4em;
    position: relative;
+   text-transform: uppercase;
 }
 
 .titres {
@@ -101,16 +102,14 @@
    }
 
    .titres {
-      font-size: .46em;
+      /* font-size: .46em; */
+      font-size: 1.7vw;
       top: initial;
    }
 }
 
 /* Tous petits écrans */
 @media screen and (max-width: 440px) {
-   .titres {
-      font-size: 1.5vw;
-   }
 
    .photo-et-noms {
       flex-direction: column;
@@ -130,14 +129,21 @@
       left: 5px;
    }
 
-   .nom, .prenom {
+   .nom,
+   .prenom {
       padding: 0 6px;
+   }
+
+   .header-wrapper {
+      padding-left: 0;
+      padding-right: 0;
    }
 }
 
 /* Écrans nanos */
 @media screen and (max-width: 300px) {
    .titres {
-      font-size: .28em;
+      font-size: .32em;
    }
+
 }

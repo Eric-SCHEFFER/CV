@@ -5,6 +5,7 @@
    --header-sous-titre: rgb(255, 102, 0);
    --blanc: white;
    --gris1: rgb(230, 230, 230);
+   --bouton-hover: rgb(0, 45, 160);
 
    /* Heights */
    --header-min-height: 70px;
@@ -57,7 +58,7 @@ h6 {
 }
 
 /*
-Méthode ci-dessous pour avoir un footer qui suit la taille de la page, tout en restant en bas.
+Méthode ci-dessous pour avoir un footer qui suit la hauteur du contenu de la page, tout en restant en bas.
 
 */
 

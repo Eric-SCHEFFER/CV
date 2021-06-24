@@ -21,33 +21,31 @@
 </head>
 
 <body>
-    <div class="header-main-container">
-        <header>
-            {% include 'components/entete.html.twig' %}
-        </header>
-        
-        <nav>
-            {% include 'components/navbar.html.twig' %}
-        </nav>
+    <header>
+        {% include 'components/entete.html.twig' %}
+    </header>
 
-        <main>
-            {% for message in app.flashes('succes') %}
-            <div class="conteneurMessageFlash">
-                <div class="messageFlash">
-                    {{ message }}
-                </div>
+    <nav>
+        {% include 'components/navbar.html.twig' %}
+    </nav>
+
+    <main>
+        {% for message in app.flashes('succes') %}
+        <div class="conteneurMessageFlash">
+            <div class="messageFlash">
+                {{ message }}
             </div>
-            {% endfor %}
-            {% for message in app.flashes('error') %}
-            <div class="conteneurMessageFlash">
-                <div class="messageFlash messageFlash-alert">
-                    {{ message }}
-                </div>
+        </div>
+        {% endfor %}
+        {% for message in app.flashes('error') %}
+        <div class="conteneurMessageFlash">
+            <div class="messageFlash messageFlash-alert">
+                {{ message }}
             </div>
-            {% endfor %}
-            {% block body %}{% endblock %}
-        </main>
-    </div>
+        </div>
+        {% endfor %}
+        {% block body %}{% endblock %}
+    </main>
 
     <footer>
         {% include 'components/footer.html.twig' %}

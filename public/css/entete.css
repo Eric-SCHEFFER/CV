@@ -3,7 +3,7 @@
    background-color: var(--header-footer-bg);
    padding: 30px 40px;
    position: relative;
-   color: var(--blanc);
+   color: var(--header-footer-font-color);
 }
 
 .bloc-header-haut {

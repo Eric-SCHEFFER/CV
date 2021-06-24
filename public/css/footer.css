@@ -1,9 +1,7 @@
 footer {
    padding: var(--footer-padding);
    background-color: var(--header-footer-bg);
-   /* La hauteur doit impérativement être fixe pour que le footer reste correctement positionné en bas de page */
-   height: var(--footer-height);
-   color: var(--blanc);
+   color: var(--header-footer-font-color);
 }
 
 

@@ -1,19 +1,40 @@
 /* Variables */
 :root {
    /* Colors */
+   --gris1: #f2f2f2;
+   --gris2: #e6e6e6;
+   --gris3: #d9d9d9;
+   --gris4: #cccccc;
+   --gris5: #bfbfbf;
+   --gris6: #b3b3b3;
+   --gris7: #a6a6a6;
+   --gris8: #999999;
+   --gris9: #8c8c8c;
+   --gris10: #808080;
+   --gris11: #737373;
+   --gris12: #666666;
+   --gris13: #595959;
+   --gris14: #4d4d4d;
+   --gris15: #404040;
+   --gris16: #333333;
+   --gris17: #262626;
+   --gris18: #1a1a1a;
+   --gris19: #0d0d0d;
+
+   /* Header et footer */
+   --header-footer-font-color: white;
    --header-footer-bg: #26466A;
-   --header-sous-titre: rgb(255, 102, 0);
-   --blanc: white;
-   --gris1: rgb(230, 230, 230);
-   --bouton-hover: rgb(0, 45, 160);
-
-   /* Heights */
    --header-min-height: 70px;
-   --footer-height: 100px;
-
-   /* Paddings */
-   --page-wrapper-padding: 40px;
+   --header-sous-titre: rgb(255, 102, 0);
    --footer-padding: 40px;
+
+   /* Boutons */
+   --bouton-color: var(--header-sous-titre);
+   --bouton-color-hover: var(--header-sous-titre);
+   --bouton-color-bg-hover: black;
+
+   /* Page */
+   --page-wrapper-padding: 40px;
 }
 
 html {
@@ -25,14 +46,9 @@ html {
 
 html,
 body {
-   /* TODO: j'ai remplacé height 100% par 100vh.
-   Tester si bug barre noire sur Samsung S7 revient */
    height: 100vh;
    overflow-x: hidden;
 }
-
-body {}
-
 
 html,
 body,
@@ -57,21 +73,27 @@ h6 {
    font-weight: 300;
 }
 
+
 /*
 Méthode ci-dessous pour avoir un footer qui suit la hauteur du contenu de la page, tout en restant en bas.
-
 */
-
 .header-main-container {
-   margin-bottom: calc((var(--footer-height) + var(--footer-padding) * 2) * (-1));
+   /* margin-bottom: calc((var(--footer-height) + var(--footer-padding) * 2) * (-1)); */
+
+   /*
+   margin-bottom: calc(var(--footer-padding) * (-2));
    min-height: 100%;
    width: 100%;
+   */
 }
 
-
-
 .header-main-container:after {
+   /*
    content: "";
    display: block;
-   height: calc(var(--footer-height) + var(--footer-padding) * 2);
+   */
+   /* height: calc(var(--footer-height) + var(--footer-padding) * 2); */
+   /*
+   height: calc(var(--footer-padding) * 2);
+   */
 }

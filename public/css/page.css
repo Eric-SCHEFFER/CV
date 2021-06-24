@@ -1,3 +1,4 @@
 .page-wrapper {
    padding: var(--page-wrapper-padding);
+   min-height: 80vh;
 }

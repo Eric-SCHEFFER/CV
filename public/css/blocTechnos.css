@@ -1,0 +1,43 @@
+.bloc-technos {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   border: blue solid 1px;
+   min-width: 200px;
+   max-width: 500px;
+   min-height: 100px;
+   padding: 20px;
+}
+
+.bloc-technos h3 {
+   font-size: .8em;
+   text-align: center;
+}
+
+.bloc-technos a {
+   color: var(--gris12);
+}
+
+.techno {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: orange solid 1px;
+   width: 80px;
+   height: 140px;
+   margin: 9px;
+}
+
+.techno-logo {
+   border: orchid 1px solid;
+   width: auto;
+
+  
+}
+
+
+
+.techno-title {
+   border: gray 1px solid;
+   padding: 4px;
+}

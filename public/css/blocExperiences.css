@@ -1,8 +1,43 @@
 .bloc-experiences {
    display:flex;
+   flex-direction: column;
+   align-self: flex-start;
    /* border: red solid 1px; */
    min-width: 200px;
-   max-width: 500px;
+   /* max-width: 600px; */
    /* min-height: 100px; */
-   padding: 20px;
+   padding: 20px 0;
+}
+
+.experience {
+   /* border: gray 1px solid; */
+   
+}
+
+.experience > * {
+   padding: 3px 0;
+}
+
+.dates-experience {
+   color: var(--gris12);
+   font-size: .9em;
+}
+
+.titre-experience {
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.entreprise-experience {
+   text-transform: uppercase;
+}
+
+.resume-experience {
+   color: var(--gris12);
+   font-style: italic;
+}
+
+.technos-utilisees {
+   /* border: greenyellow solid 1px; */
+   height: 30px;
 }

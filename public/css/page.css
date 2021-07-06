@@ -6,6 +6,6 @@
 .bloc-1 {
    display: flex;
    justify-content: space-around;
-   border: 1px green solid;
+   /* border: 1px green solid; */
    flex-wrap: wrap;
 }

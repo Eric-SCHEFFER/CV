@@ -1,8 +1,8 @@
 .bloc-experiences {
    display:flex;
-   border: red solid 1px;
+   /* border: red solid 1px; */
    min-width: 200px;
    max-width: 500px;
-   min-height: 100px;
+   /* min-height: 100px; */
    padding: 20px;
 }

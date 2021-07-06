@@ -2,10 +2,10 @@
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
-   border: blue solid 1px;
+   /* border: blue solid 1px; */
    min-width: 200px;
    max-width: 500px;
-   min-height: 100px;
+   /* min-height: 100px; */
    padding: 20px;
 }
 
@@ -22,22 +22,31 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   border: orange solid 1px;
+   /* border: orange solid 1px; */
    width: 80px;
-   height: 140px;
-   margin: 9px;
+   height: 90px;
+   margin: 16px;
 }
 
 .techno-logo {
-   border: orchid 1px solid;
+   /* border: orchid 1px solid; */
    width: auto;
-
-  
 }
 
+.image-logo {
+   width: 80px;
+   height: 80px;
+}
 
+.image-logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+   /* filter: grayscale(100%); */
+}
 
 .techno-title {
-   border: gray 1px solid;
-   padding: 4px;
+   /* border: gray 1px solid;
+   padding: 4px; */
+
 }

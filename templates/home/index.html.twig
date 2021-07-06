@@ -18,6 +18,7 @@
         <div class="bloc-technos">
 
 
+            {# ================= COMPÉTENCES ================= #}
 
             {# TODO: Boucle sur techno avec variables twig #}
             <div class="techno">
@@ -101,6 +102,7 @@
 
 
 
+        {# ================== EXPÉRIENCES ================= #}
 
         {# TODO #}
         <h1>Expériences</h1>
@@ -108,7 +110,8 @@
             {% for i in 0..10 %}
             <div class="experience">
                 <div class="dates-experience">
-                    Du 13 janvier 2020 au 14 fev 2020 (1 mois)
+                    
+                    13 janvier 2020 - 14 fev 2020 (1 mois)
                 </div>
                 <div class="titre-experience">
                     Super développeur génial
@@ -125,18 +128,52 @@
                     voluptate, aperiam eaque consequatur similique, ab labore quibusdam doloribus in. Facilis laudantium
                     dignissimos, rem autem porro aut.
                 </div>
+
+                <div class="liens">
+                    <a href="" class="bouton">Détails</a>
+                </div>
                 <div class="technos-utilisees">
                     {# TODO: Titre, affichage des technos avec les images svg #}
                     <div class="titre-technos-utilisees">
                         Technos utilisées
                     </div>
                     <div class="liste-technos-utilisees">
-                        {% for i in 0..6 %}
-                            <div class="techno-utilisee">
-                                Techno
-                            </div>
-                        {% endfor %}
-                        
+                        <div class="techno-utilisee">
+                            <a href="#" class="techno-utilisee-logo">
+                                <div class="image-techno-utilisee-logo">
+                                    <img src="{{ asset('images/html5.svg') }}" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="techno-utilisee">
+                            <a href="#" class="techno-utilisee-logo">
+                                <div class="image-techno-utilisee-logo">
+                                    <img src="{{ asset('images/css3.svg') }}" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="techno-utilisee">
+                            <a href="#" class="techno-utilisee-logo">
+                                <div class="image-techno-utilisee-logo">
+                                    <img src="{{ asset('images/js.svg') }}" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="techno-utilisee">
+                            <a href="#" class="techno-utilisee-logo">
+                                <div class="image-techno-utilisee-logo">
+                                    <img src="{{ asset('images/php.svg') }}" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="techno-utilisee">
+                            <a href="#" class="techno-utilisee-logo">
+                                <div class="image-techno-utilisee-logo">
+                                    <img src="{{ asset('images/symfony.svg') }}" alt="">
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>

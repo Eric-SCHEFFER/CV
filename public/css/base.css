@@ -73,6 +73,9 @@ h6 {
    font-weight: 300;
 }
 
+a {
+   text-decoration: none;
+}
 
 /*
 Méthode ci-dessous pour avoir un footer qui suit la hauteur du contenu de la page, tout en restant en bas.

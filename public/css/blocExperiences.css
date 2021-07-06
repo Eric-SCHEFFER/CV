@@ -2,7 +2,7 @@
    display:flex;
    flex-direction: column;
    align-self: flex-start;
-   /* border: red solid 1px; */
+   border: red solid 1px;
    min-width: 200px;
    /* max-width: 600px; */
    /* min-height: 100px; */
@@ -10,7 +10,7 @@
 }
 
 .experience {
-   /* border: gray 1px solid; */
+   border: gray 1px solid;
    
 }
 
@@ -19,8 +19,8 @@
 }
 
 .dates-experience {
-   color: var(--gris12);
-   font-size: .9em;
+   color: var(--gris10);
+   font-size: .85em;
 }
 
 .titre-experience {
@@ -33,11 +33,27 @@
 }
 
 .resume-experience {
-   color: var(--gris12);
+   color: var(--gris13);
+   font-size: .9em;
    font-style: italic;
 }
 
 .technos-utilisees {
-   /* border: greenyellow solid 1px; */
-   height: 30px;
+   display: flex;
+   border: greenyellow solid 1px;
+   padding: 12px 0;
+}
+
+.titre-technos-utilisees {
+   color: var(--header-footer-bg);
+   border: rgb(30, 192, 210) 1px solid;
+   font-size: .7em;
+   width: 70px;
+   text-transform: uppercase;
+}
+
+.liste-technos-utilisees {
+   display: flex;
+   flex-wrap: wrap;
+   border: rgb(255, 0, 191) 1px solid;
 }

@@ -103,7 +103,7 @@
 
 
         {# TODO #}
-        <h1>Éxpériences</h1>
+        <h1>Expériences</h1>
         <div class="bloc-experiences">
             {% for i in 0..10 %}
             <div class="experience">
@@ -126,7 +126,18 @@
                     dignissimos, rem autem porro aut.
                 </div>
                 <div class="technos-utilisees">
-
+                    {# TODO: Titre, affichage des technos avec les images svg #}
+                    <div class="titre-technos-utilisees">
+                        Technos utilisées
+                    </div>
+                    <div class="liste-technos-utilisees">
+                        {% for i in 0..6 %}
+                            <div class="techno-utilisee">
+                                Techno
+                            </div>
+                        {% endfor %}
+                        
+                    </div>
                 </div>
             </div>
             {% endfor %}

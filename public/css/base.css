@@ -26,7 +26,7 @@
    --header-footer-bg: #26466A;
    --header-min-height: 70px;
    --header-sous-titre: rgb(255, 102, 0);
-   --footer-padding: 40px;
+   --footer-padding: 60px;
 
    /* Boutons */
    --bouton-color: var(--header-sous-titre);

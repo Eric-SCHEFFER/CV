@@ -1,7 +1,7 @@
 .header-wrapper {
    min-height: var(--header-min-height);
    background-color: var(--header-footer-bg);
-   padding: 30px 40px;
+   padding: 30px 60px;
    position: relative;
    color: var(--header-footer-font-color);
 }

@@ -15,7 +15,7 @@
 .bouton:hover {
    color: var(--bouton-color-hover);
    border-color: var(--bouton-color-hover);
-   background-color: var(--bouton-color-bg-hover);
+   background-color: var(--header-footer-bg);
 }
 
 .bouton-small-1 {

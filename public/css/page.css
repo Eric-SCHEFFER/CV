@@ -4,7 +4,7 @@
 }
 
 .bloc-1 {
-   /* border: 1px green solid; */
+   border: 1px green solid;
    max-width: 1600px;
    margin: auto;
    padding: 0 20px;

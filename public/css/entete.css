@@ -13,10 +13,13 @@
    flex-wrap: wrap;
 }
 
+.bloc-header-haut a {
+   color: white;
+}
+
 .photo-et-noms {
    display: flex;
    align-items: center;
-   /*border: rgb(0, 195, 255) 1px solid; */
    position: relative;
 }
 
@@ -47,7 +50,7 @@
    margin: auto;
    position: relative;
    font-size: 1vw;
-   top: 25px;
+   top: 32px;
 }
 
 .titre {
@@ -87,6 +90,10 @@
    .photo {
       width: 138px;
       height: 138px;
+   }
+
+   .header-wrapper {
+      padding-bottom: 0;
    }
 }
 

@@ -37,7 +37,7 @@
 .nom-et-prenom {
    /* border: 1px yellow solid; */
    padding: 0 40px;
-   font-size: 1.4em;
+   font-size: 1.8em;
    position: relative;
    text-transform: uppercase;
 }
@@ -57,7 +57,7 @@
 }
 
 .titre h1 {
-   font-weight: 200;
+   font-weight: 300;
 }
 
 
@@ -71,7 +71,7 @@
 }
 
 .sous-titre h1 {
-   font-weight: 400;
+   font-weight: 500;
 }
 
 
@@ -91,7 +91,7 @@
 }
 
 /* Petits écrans */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
    .bloc-header-haut {
       flex-direction: column;
       align-items: center;
@@ -109,7 +109,7 @@
 }
 
 /* Tous petits écrans */
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 540px) {
 
    .photo-et-noms {
       flex-direction: column;

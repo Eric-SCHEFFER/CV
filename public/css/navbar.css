@@ -3,11 +3,35 @@ nav {
    top: 0;
    color: var(--header-footer-font-color);
    z-index: 100;
+   /* border: greenyellow solid 1px; */
 }
 
 .navbar {
    background-color: var(--header-footer-bg);
-   padding: 15px 60px;
+   padding: 20px 60px;
    text-transform: uppercase;
-   font-size: .9em;
+   font-size: 1.2em;
+   font-weight: 500;
+   /* border: red solid 1px; */
 }
+
+nav a {
+   /* border: white solid 1px; */
+   color: white;
+}
+
+nav ul {
+   /* border: mediumturquoise solid 1px; */
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: space-around;
+}
+
+nav li {
+   /* border: violet solid 1px; */
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+

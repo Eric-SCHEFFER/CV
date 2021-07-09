@@ -82,6 +82,12 @@ a {
    text-decoration: none;
 }
 
+.ancre {
+   position: relative;
+   top: -60px;
+   visibility: hidden;
+}
+
 /*
 Méthode ci-dessous pour avoir un footer qui suit la hauteur du contenu de la page, tout en restant en bas.
 */

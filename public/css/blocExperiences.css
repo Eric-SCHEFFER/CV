@@ -27,7 +27,7 @@
    background-color: var(--gris3);
    padding-left: 22px;
    padding-right: 22px;
-   /* max-width: max-content; */
+   max-width: max-content;
    border-radius: 6px;
 }
 

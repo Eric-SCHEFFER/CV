@@ -35,3 +35,6 @@ nav li {
    margin: 0;
 }
 
+.active {
+   text-decoration: underline var(--header-sous-titre) solid 2px;
+}

@@ -1,14 +1,17 @@
-// TODO: Mettre en surbrillance le menu correspondant à la position du scroll par rapport à son ancre
+// TODO: Mettre en surbrillance le lien du menu quand l'ancre qu'il cible est affichée dans la page
 
 window.addEventListener("DOMContentLoaded", () => {
 
-   document.querySelector("body").addEventListener("scroll", detecteScroll);
+   const ancres = document.querySelectorAll(".ancre[id]");
+   const sections = document.querySelectorAll(".ancre[id] + section.bloc-1")
+   document.querySelector("body").addEventListener("scroll", navHighlighter);
 
    /**
     * 
     */
-   function detecteScroll() {
-      console.log(document.body.scrollTop);
+   function navHighlighter() {
+      let scrollY = window.document.body.scrollTop;
+      console.log(scrollY);
 
    }
 });

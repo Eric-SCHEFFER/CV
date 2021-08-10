@@ -13,13 +13,16 @@
 
 {% block body %}
 <div class="page-wrapper">
-    <div class="bloc-1">
-        <div class="ancre" id="competencesId"></div>
+
+    {# ================= COMPÉTENCES ================= #}
+
+    <!-- On utilise une div en guise d'ancre, puis on la positionne plus haut en css -->
+    <!-- Ceci pour éviter un décalage de l'affichage, à cause du menu sticky -->
+    <div class="ancre" id="competences"></div>
+    <section class="bloc-1">
         <h1>Compétences</h1>
         <div class="bloc-technos">
 
-
-            {# ================= COMPÉTENCES ================= #}
 
             {# TODO: Boucle sur techno avec variables twig #}
             <div class="techno">
@@ -96,109 +99,106 @@
             </div>
 
 
-        </div>
+    </section>
 
 
 
 
 
 
-        {# ================== EXPÉRIENCES ================= #}
-
-
-        <!-- On utilise une div en guise d'ancre, puis on la positionne plus haut en css -->
-        <!-- Ceci pour éviter un décalage de l'affichage, à cause du menu sticky -->
-        <div class="ancre" id="experiencesId"></div>
+    {# ================== EXPÉRIENCES ================= #}
+    
+    <div class="ancre" id="experiences"></div>
+    <section class="bloc-1" >
         <h1>Expériences</h1>
-        <div class="bloc-experiences">
-            {% for i in 0..10 %}
-            <div class="experience">
-                <div class="header-experience">
-                    <p class="dates-experience">
-                        <i class="fas fa-calendar-alt"></i>
-                        <span>13 janvier 2020 - 14 fev 2020 (1 mois)</span>
-                    </p>
-                    <h2 class="titre-experience">
-                        <i class="fas fa-user-tie"></i>
-                        <span>Super développeur génial</span>
-                    </h2>
-                    <h2 class="entreprise-experience">
-                        <i class="fas fa-industry"></i>
-                        <span>The big Lebowski produits dérivés</span>
-                    </h2>
-                </div>
-                <p class="resume-experience">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste a commodi magni delectus suscipit
-                    architecto fuga. Consectetur asperiores corporis eum numquam, fugit aspernatur minus excepturi,
-                    recusandae aperiam, et dolorem quidem atque? Modi, minus. Ducimus rem corrupti, numquam optio
-                    excepturi molestiae. Ut laboriosam ex maxime dolorem nostrum obcaecati impedit laudantium illum
-                    consequatur eum totam, earum iusto adipisci! Repellendus, voluptas vel? Quo exercitationem eos
-                    voluptate, aperiam eaque consequatur similique, ab labore quibusdam doloribus in. Facilis laudantium
-                    dignissimos, rem autem porro aut.
+        {% for i in 0..10 %}
+        <div class="experience">
+            <div class="header-experience">
+                <p class="dates-experience">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>13 janvier 2020 - 14 fev 2020 (1 mois)</span>
                 </p>
+                <h2 class="titre-experience">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Super développeur génial</span>
+                </h2>
+                <h2 class="entreprise-experience">
+                    <i class="fas fa-industry"></i>
+                    <span>The big Lebowski produits dérivés</span>
+                </h2>
+            </div>
+            <p class="resume-experience">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste a commodi magni delectus suscipit
+                architecto fuga. Consectetur asperiores corporis eum numquam, fugit aspernatur minus excepturi,
+                recusandae aperiam, et dolorem quidem atque? Modi, minus. Ducimus rem corrupti, numquam optio
+                excepturi molestiae. Ut laboriosam ex maxime dolorem nostrum obcaecati impedit laudantium illum
+                consequatur eum totam, earum iusto adipisci! Repellendus, voluptas vel? Quo exercitationem eos
+                voluptate, aperiam eaque consequatur similique, ab labore quibusdam doloribus in. Facilis laudantium
+                dignissimos, rem autem porro aut.
+            </p>
 
-                <div class="liens">
-                    <a href="" class="bouton">Détails</a>
+            <div class="liens">
+                <a href="" class="bouton">Détails</a>
+            </div>
+            <div class="technos-utilisees">
+                {# TODO: Titre, affichage des technos avec les images svg #}
+                <div class="titre-technos-utilisees">
+                    Technos utilisées
                 </div>
-                <div class="technos-utilisees">
-                    {# TODO: Titre, affichage des technos avec les images svg #}
-                    <div class="titre-technos-utilisees">
-                        Technos utilisées
+                <div class="liste-technos-utilisees">
+                    <div class="techno-utilisee">
+                        <a href="#" class="techno-utilisee-logo">
+                            <div class="image-techno-utilisee-logo">
+                                <img src="{{ asset('images/html5.svg') }}" alt="">
+                            </div>
+                        </a>
                     </div>
-                    <div class="liste-technos-utilisees">
-                        <div class="techno-utilisee">
-                            <a href="#" class="techno-utilisee-logo">
-                                <div class="image-techno-utilisee-logo">
-                                    <img src="{{ asset('images/html5.svg') }}" alt="">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="techno-utilisee">
-                            <a href="#" class="techno-utilisee-logo">
-                                <div class="image-techno-utilisee-logo">
-                                    <img src="{{ asset('images/css3.svg') }}" alt="">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="techno-utilisee">
-                            <a href="#" class="techno-utilisee-logo">
-                                <div class="image-techno-utilisee-logo">
-                                    <img src="{{ asset('images/js.svg') }}" alt="">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="techno-utilisee">
-                            <a href="#" class="techno-utilisee-logo">
-                                <div class="image-techno-utilisee-logo">
-                                    <img src="{{ asset('images/php.svg') }}" alt="">
-                                </div>
-                            </a>
-                        </div>
-                        <div class="techno-utilisee">
-                            <a href="#" class="techno-utilisee-logo">
-                                <div class="image-techno-utilisee-logo">
-                                    <img src="{{ asset('images/symfony.svg') }}" alt="">
-                                </div>
-                            </a>
-                        </div>
+                    <div class="techno-utilisee">
+                        <a href="#" class="techno-utilisee-logo">
+                            <div class="image-techno-utilisee-logo">
+                                <img src="{{ asset('images/css3.svg') }}" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="techno-utilisee">
+                        <a href="#" class="techno-utilisee-logo">
+                            <div class="image-techno-utilisee-logo">
+                                <img src="{{ asset('images/js.svg') }}" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="techno-utilisee">
+                        <a href="#" class="techno-utilisee-logo">
+                            <div class="image-techno-utilisee-logo">
+                                <img src="{{ asset('images/php.svg') }}" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="techno-utilisee">
+                        <a href="#" class="techno-utilisee-logo">
+                            <div class="image-techno-utilisee-logo">
+                                <img src="{{ asset('images/symfony.svg') }}" alt="">
+                            </div>
+                        </a>
+                    </div>
 
-                    </div>
                 </div>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
+    </section>
 
-    </div>
+</div>
 
 
 </div>
 
 {% block javascript %}
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" -->
-        <!-- integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"> -->
-    </script>
-    <script src="{{ asset('js/highlightMenuLinks.js') }}"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" -->
+<!-- integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"> -->
+</script>
+<script src="{{ asset('js/highlightMenuLinks.js') }}"></script>
 {% endblock %}
 
-<div class="ancre" id="footerId"></div>
+<div class="ancre" id="footer"></div>
 {% endblock %}

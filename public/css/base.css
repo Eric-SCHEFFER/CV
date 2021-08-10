@@ -46,8 +46,8 @@ html {
 
 html,
 body {
-   height: 100vh;
    overflow-x: hidden;
+   height: 100vh;
 }
 
 
@@ -80,12 +80,6 @@ h6 {
 
 a {
    text-decoration: none;
-}
-
-.ancre {
-   position: relative;
-   top: -60px;
-   visibility: hidden;
 }
 
 /*

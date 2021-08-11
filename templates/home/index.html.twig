@@ -18,8 +18,8 @@
 
     <!-- On utilise une div en guise d'ancre, puis on la positionne plus haut en css -->
     <!-- Ceci pour éviter un décalage de l'affichage, à cause du menu sticky -->
-    <div class="ancre" id="competences"></div>
     <section class="bloc-1">
+        <div class="ancre" id="competences"></div>
         <h1>Compétences</h1>
         <div class="bloc-technos">
 
@@ -108,8 +108,8 @@
 
     {# ================== EXPÉRIENCES ================= #}
     
-    <div class="ancre" id="experiences"></div>
-    <section class="bloc-1" >
+    <section class="bloc-1 min -height" >
+        <div class="ancre" id="experiences"></div>
         <h1>Expériences</h1>
         {% for i in 0..10 %}
         <div class="experience">
@@ -137,7 +137,7 @@
                 dignissimos, rem autem porro aut.
             </p>
 
-            <div class="liens">
+            <div class="liens">experiences
                 <a href="" class="bouton">Détails</a>
             </div>
             <div class="technos-utilisees">
@@ -187,6 +187,10 @@
         </div>
         {% endfor %}
     </section>
+    <section class="bloc-1 min-height">
+        <div class="ancre" id="derniereSection"></div>
+            <h1>Dernière section</h1>
+    </section>
 
 </div>
 
@@ -199,6 +203,4 @@
 </script>
 <script src="{{ asset('js/highlightMenuLinks.js') }}"></script>
 {% endblock %}
-
-<div class="ancre" id="footer"></div>
 {% endblock %}

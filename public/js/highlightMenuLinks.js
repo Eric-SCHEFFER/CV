@@ -1,4 +1,4 @@
-// TODO: Mettre en surbrillance le lien du menu quand l'ancre qu'il cible est affichée dans la page
+// Mettre en surbrillance le lien du menu quand l'ancre qu'il cible est affichée dans la page
 
 window.addEventListener("DOMContentLoaded", () => {
    const ancres = document.querySelectorAll(".ancre[id]");
@@ -21,13 +21,6 @@ window.addEventListener("DOMContentLoaded", () => {
          } else {
             document.querySelector(".navbar a[href*=" + sectionId + "]").classList.remove("active");
          }
-
       });
-
-
-
-
-
-
    }
 });

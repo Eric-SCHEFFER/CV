@@ -16,8 +16,10 @@ nav {
 }
 
 nav a {
-   /* border: white solid 1px; */
+   border-bottom: transparent solid 4px;
    color: white;
+   padding: 8px 0;
+   transition: ease-in-out .4s all;
 }
 
 nav ul {
@@ -35,6 +37,7 @@ nav li {
    margin: 0;
 }
 
-.active {
-   text-decoration: underline var(--header-sous-titre) solid 2px;
+.active, nav a:hover {
+   border-bottom: var(--header-sous-titre) solid 4px;
+   transition: ease-in-out .4s all;
 }

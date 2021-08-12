@@ -13,12 +13,13 @@ window.addEventListener("DOMContentLoaded", () => {
       let scrollY = document.body.scrollTop;
       ancres.forEach(ancre => {
          let sectionHeight = ancre.parentElement.offsetHeight;
-         // Si l'id de l'ancre est "top", on agrandi la hauteur de sa section de la hauteur de la navbar + le padding-top de page-wrapper, pour éviter qu'aucun lien ne soit allumé pendant la transition du scroll avec la prochaine section.
+         // Si l'id de l'ancre est "top", on agrandi la hauteur de sa section avec la hauteur de la navbar + le padding-top de .page-wrapper, pour éviter que le lien accueil soit éteind pendant une partie de la transition du scroll avec la prochaine section.
          if (ancre.getAttribute("id") === "top") {
-            // Taille navbar et taille padding-top du .page-wrapper
-            let navbarheight = document.querySelector(".navbar").offsetHeight;
+            // Hauteur navbar
+            let navbarHeight = document.querySelector(".navbar").offsetHeight;
+            // Valeur du padding-top de .page-wrapper
             let pageWwrapperPadding = parseInt(window.getComputedStyle(document.querySelector(".page-wrapper")).getPropertyValue("padding-top"), 10);
-            sectionHeight = ancre.parentElement.offsetHeight + pageWwrapperPadding + navbarheight;
+            sectionHeight = ancre.parentElement.offsetHeight + navbarHeight + pageWwrapperPadding;
          }
          const sectionTop = ancre.parentElement.offsetTop - 70;
          sectionId = ancre.getAttribute("id");

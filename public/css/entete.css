@@ -4,6 +4,7 @@
    padding: 30px 60px;
    position: relative;
    color: var(--header-footer-font-color);
+   /* border: yellow 1px solid; */
 }
 
 .bloc-header-haut {

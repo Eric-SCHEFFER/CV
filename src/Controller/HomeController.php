@@ -7,6 +7,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Form\ContactType;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Mailer\MailerInterface;
 
 class HomeController extends AbstractController
 {
@@ -27,7 +28,7 @@ class HomeController extends AbstractController
                 $templateTwig = "emails/contact.html.twig";
 
                 // Envoi du mail contenant les données du formulaire
-                $this->envoiEmail($mailer, $expediteur, $destinataire, $templateTwig, $objet, $contact);
+                // $this->envoiEmail($mailer, $expediteur, $destinataire, $templateTwig, $objet, $contact);
                 $this->addFlash('succes', 'Le message à bien été envoyé');
                 return $this->redirectToRoute('home');
             }

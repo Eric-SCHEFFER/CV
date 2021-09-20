@@ -8,6 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use App\Form\ContactType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Mailer\MailerInterface;
+use Symfony\Bridge\Twig\Mime\TemplatedEmail;
 
 class HomeController extends AbstractController
 {
@@ -40,5 +41,22 @@ class HomeController extends AbstractController
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
         ]);
+    }
+
+    /** ======= Méhode: Envoi d'email en html, dont le corps est cherché dans une page twig ========
+     *
+     */
+    private function envoiEmail($mailer, $expediteur, $destinataire, $templateTwig, $objet, $contact)
+    {
+        $email = (new TemplatedEmail())
+            ->from($expediteur)
+            ->to($destinataire)
+            ->subject($objet)
+            ->htmlTemplate($templateTwig)
+            // Envoi les paramètres à la page twig
+            ->context([
+                'contact' => $contact
+            ]);
+        $mailer->send($email);
     }
 }

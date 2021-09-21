@@ -1,0 +1,20 @@
+/* =========== Message flash ================= */
+.conteneurMessageFlash {
+   text-align: center;
+}
+
+.messageFlash {
+   z-index: 1000;
+   display: inline-block;
+   padding: 16px;
+   color: #d4edda;
+   text-align: center;
+   border-radius: 6px;
+   background-color: #265735;
+   bottom: 16px;
+}
+
+.messageFlash-alert {
+   color: #F8D7DA;
+   background-color: #742028;
+}

@@ -29,9 +29,10 @@ class HomeController extends AbstractController
                 $templateTwig = "emails/contact.html.twig";
 
                 // Envoi du mail contenant les données du formulaire
-                // $this->envoiEmail($mailer, $expediteur, $destinataire, $templateTwig, $objet, $contact);
+                $this->envoiEmail($mailer, $expediteur, $destinataire, $templateTwig, $objet, $contact);
                 $this->addFlash('succes', 'Le message à bien été envoyé');
-                return $this->redirectToRoute('home');
+                // On redirige vers la même page (home), sur l'ancre top
+                return $this->redirectToRoute('home', ['_fragment' => 'top']);
             }
         }
 
@@ -39,11 +40,11 @@ class HomeController extends AbstractController
         $form = $this->createForm(ContactType::class);
 
         return $this->render('home/index.html.twig', [
-            'controller_name' => 'HomeController',
+            'contactForm' => $form->createView(),
         ]);
     }
 
-    /** ======= Méhode: Envoi d'email en html, dont le corps est cherché dans une page twig ========
+    /** ======= Méthode: Envoi d'email en html, dont le corps est cherché dans une page twig ========
      *
      */
     private function envoiEmail($mailer, $expediteur, $destinataire, $templateTwig, $objet, $contact)

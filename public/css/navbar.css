@@ -39,5 +39,5 @@ nav li {
 
 .active, nav a:hover {
    border-bottom: var(--header-sous-titre) solid 4px;
-   transition: ease-in-out .4s all;
+   /* transition: ease-in-out .6s all; */
 }

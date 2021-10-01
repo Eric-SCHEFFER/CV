@@ -105,85 +105,71 @@
 
     {# ================== EXPÉRIENCES ================= #}
 
-    <section class="bloc-1 min -height">
+    <section class="bloc-1 min-height">
         <div class="ancre" id="experiences"></div>
         <h1>Expériences</h1>
-        {% for i in 0..10 %}
-        <div class="experience">
-            <div class="header-experience">
-                <p class="dates-experience">
-                    <i class="fas fa-calendar-alt"></i>
-                    <span>13 janvier 2020 - 14 fev 2020 (1 mois)</span>
-                </p>
-                <h2 class="titre-experience">
-                    <i class="fas fa-user-tie"></i>
-                    <span>Super développeur génial</span>
-                </h2>
-                <h2 class="entreprise-experience">
-                    <i class="fas fa-industry"></i>
-                    <span>The big Lebowski produits dérivés</span>
-                </h2>
-            </div>
-            <p class="resume-experience">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste a commodi magni delectus suscipit
-                architecto fuga. Consectetur asperiores corporis eum numquam, fugit aspernatur minus excepturi,
-                recusandae aperiam, et dolorem quidem atque? Modi, minus. Ducimus rem corrupti, numquam optio
-                excepturi molestiae. Ut laboriosam ex maxime dolorem nostrum obcaecati impedit laudantium illum
-                consequatur eum totam, earum iusto adipisci! Repellendus, voluptas vel? Quo exercitationem eos
-                voluptate, aperiam eaque consequatur similique, ab labore quibusdam doloribus in. Facilis laudantium
-                dignissimos, rem autem porro aut.
-            </p>
+        {% for i in 0..1 %}
 
-            <div class="liens">
+        <div class="bloc-experience">
+
+            <div class="bloc-experience-haut">
+
+                <div class="bloc-experience-titres">
+                    <p class="dates">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>13 janvier 2020 - 14 fev 2020 (1 mois)</span>
+                    </p>
+                    <h2 class="poste">
+                        <i class="fas fa-user-tie"></i>
+                        <span>Super développeur génial</span>
+                    </h2>
+                    <h2 class="entreprise">
+                        <i class="fas fa-industry"></i>
+                        <span>The big Lebowski produits dérivés</span>
+                    </h2>
+                </div>
+
+                <div class="bloc-experience-details">
+                    {# TODO: Régler le problème ellipsis multiline (Rajouter une div en bottom de ce bloc, en css, avec du js ou pas, before ou after, mettre dedans "voir la suite" ?) #}
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut iste a commodi magni delectus suscipit
+                    architecto fuga. Consectetur asperiores corporis eum numquam, fugit aspernatur minus excepturi,
+                    recusandae aperiam, et dolorem quidem atque? Modi, minus. Ducimus rem corrupti, numquam optio
+                    excepturi molestiae. Ut laboriosam ex maxime dolorem nostrum obcaecati impedit laudantium illum
+                    consequatur eum totam, earum iusto adipisci! Repellendus, voluptas vel? Quo exercitationem eos
+                    voluptate, aperiam eaque consequatur similique, ab labore quibusdam doloribus in. Facilis laudantium
+                    dignissimos, rem autem porro aut.
+                </div>
+            </div>
+
+            {# <div class="liens">
                 <a href="" class="bouton">Détails</a>
-            </div>
-            <div class="technos-utilisees">
-                {# TODO: Titre, affichage des technos avec les images svg #}
-                <div class="titre-technos-utilisees">
-                    Technos utilisées
+            </div> #}
+            
+            <div class="bloc-experience-footer">
+                
+                <div class="technos-utilisees">
+                    {# Titre, affichage des technos avec les images svg #}
+                    <h2 class="titre-technos-utilisees">
+                        Technos utilisées
+                    </h2>
+                    <div class="liste-technos-utilisees">
+                        {% for i in 0..5 %}
+                        <div class="techno-utilisee">
+                            <a href="#" class="techno-utilisee-logo">
+                                <div class="image-techno-utilisee-logo">
+                                    <img src="{{ asset('images/html5.svg') }}" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
                 </div>
-                <div class="liste-technos-utilisees">
-                    <div class="techno-utilisee">
-                        <a href="#" class="techno-utilisee-logo">
-                            <div class="image-techno-utilisee-logo">
-                                <img src="{{ asset('images/html5.svg') }}" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="techno-utilisee">
-                        <a href="#" class="techno-utilisee-logo">
-                            <div class="image-techno-utilisee-logo">
-                                <img src="{{ asset('images/css3.svg') }}" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="techno-utilisee">
-                        <a href="#" class="techno-utilisee-logo">
-                            <div class="image-techno-utilisee-logo">
-                                <img src="{{ asset('images/js.svg') }}" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="techno-utilisee">
-                        <a href="#" class="techno-utilisee-logo">
-                            <div class="image-techno-utilisee-logo">
-                                <img src="{{ asset('images/php.svg') }}" alt="">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="techno-utilisee">
-                        <a href="#" class="techno-utilisee-logo">
-                            <div class="image-techno-utilisee-logo">
-                                <img src="{{ asset('images/symfony.svg') }}" alt="">
-                            </div>
-                        </a>
-                    </div>
+            </div>
 
-                </div>
-            </div>
         </div>
         {% endfor %}
     </section>
+
 
     {# ================== CONTACT ET FORMULAIRE ================= #}
     <section class="bloc-1 min-height">

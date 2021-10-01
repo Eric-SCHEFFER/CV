@@ -9,15 +9,40 @@ use App\Form\ContactType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
+use App\Service\TodayGenerator;
 
 class HomeController extends AbstractController
 {
     /**
      * @Route("/home", name="home")
      */
-    public function index(Request $request, MailerInterface $mailer): Response
+    public function index(Request $request, MailerInterface $mailer, TodayGenerator $todayGenerator): Response
     {
-        // TODO: Formulaire
+        // La date du jour, récupérée dans le service generateAToday
+        $today = $todayGenerator->generateAToday();
+
+        // TODO: TECHNOS
+
+
+
+
+        // TODO: EXPERIENCES
+
+
+        
+
+        // TODO: LOISIRSETDIVERS
+
+
+
+
+        // TODO: DIPLOMES
+
+
+
+
+
+        // Formulaire
         $form = $this->createForm(ContactType::class);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
@@ -43,6 +68,7 @@ class HomeController extends AbstractController
             'contactForm' => $form->createView(),
         ]);
     }
+
 
     /** ======= Méthode: Envoi d'email en html, dont le corps est cherché dans une page twig ========
      *

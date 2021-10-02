@@ -1,22 +1,19 @@
 .bloc-experience {
    /* border: rgb(0, 17, 255) solid 1px; */
-   margin: 50px 0 90px 0;
-}
-
-.bloc-experience-haut {
    display: flex;
-   /* border: chartreuse solid 1px; */
-   height: 105px;
+   /* flex-wrap: wrap; */
+   margin: 50px 0 90px 0;
+   height: 110px;
 }
 
 .bloc-experience-titres {
    width: 370px;
    min-width: 370px;
-   /* border: darkmagenta solid 1px; */
+   border: darkmagenta solid 1px;
    /* background-color: var(--gris3); */
    /* padding: 22px; */
    color: var(--header-footer-bg);
-   line-height: 1.5em;
+   line-height: 2em;
 }
 
 .bloc-experience-titres i {
@@ -40,23 +37,23 @@
 }
 
 .bloc-experience-details {
-   /* border: gray solid 1px; */
+   border: gray solid 1px;
+   max-width: 700px;
    padding: 0 22px 22px 22px;
    color: var(--gris13);
    font-size: .9em;
    font-style: italic;
    overflow: hidden;
+   max-height: max-content;
 }
 
 .bloc-experience-footer {
-   /* border: red solid 1px; */
-
+   border: rgb(148, 142, 142) solid 1px;
+   min-width: 300px;
 }
 
 .technos-utilisees {
    display: flex;
-   flex-wrap: wrap;
-   margin-top: 20px;
 }
 
 .titre-technos-utilisees {
@@ -64,19 +61,19 @@
    /* border: rgb(30, 192, 210) 1px solid; */
    font-size: .7em;
    /* width: 70px; */
-   padding: 4px;
-   align-self: center;
+   padding: 0;
 }
 
 .liste-technos-utilisees {
    display: flex;
    flex-wrap: wrap;
-   padding: 4px;
+   padding: 0 4px 0 4px;
 }
 
 .image-techno-utilisee-logo {
    width: 30px;
    height: 30px;
+   margin: 0 2px 4px 2px;
 }
 
 .image-techno-utilisee-logo img {
